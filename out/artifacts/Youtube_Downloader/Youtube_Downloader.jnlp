@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Youtube_Downloader.jnlp">
+  <information>
+    <title>Youtube Downloader</title>
+    <vendor>Arvind Rachuri</vendor>
+    <description>youtube-dl with gui</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Youtube_Downloader.jar" size="51276" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="downloader.Main"  name="Youtube_Downloader" />
+  <update check="background"/>
+</jnlp>

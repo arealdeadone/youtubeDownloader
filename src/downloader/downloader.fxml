@@ -1,0 +1,26 @@
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="550" prefWidth="550" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="downloader.Controller">
+    <children>
+        <Label fx:id="urlLabel" layoutY="120" layoutX="100" text="URL " />
+        <TextField fx:id="playlistUrl" layoutY="120" layoutX="160" text="Enter the url of the playlist/video you want to Download" prefWidth="350" />
+        <Label fx:id="fbLabel" layoutY="200" layoutX="100" text="Choose save location" />
+        <Button layoutY="200" layoutX="300" text="Browse" onAction="#browseFiles" />
+        <Label layoutY="300" layoutX="200" text="Use proxy authentication" />
+        <CheckBox fx:id="proxyCheck" layoutY="300" layoutX="500" onAction="#setProxyFieldTrue" />
+        <Label layoutY="330" layoutX="100" text="Hostname" />
+        <Label layoutY="330" layoutX="350" text="Username" />
+        <Label layoutY="330" layoutX="550" text="Password" />
+        <TextField fx:id="host" layoutY="350" layoutX="100" text="Proxy Url(ip:port)" disable="true" />
+        <TextField fx:id="username" layoutY="350" layoutX="300" text="Username" disable="true" />
+        <PasswordField fx:id="password" layoutY="350" layoutX="500" text="Password" disable="true" />
+        <Button fx:id="downloadButton" layoutY="450" layoutX="200" text="Download" onAction="#downloadFiles" />
+        <Button fx:id="ppButton" layoutY="450" layoutX="400" text="Pause" onAction="#pauseOrPlayDownload" disable="true" />
+        <Label fx:id="progLabel" layoutX="100" layoutY="500" />
+    </children>
+</AnchorPane>
